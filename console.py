@@ -26,3 +26,11 @@ import repositories.artist_repository as artist_repo
 # resultados = album_repo.albums_by_artist(1)
 # for resultado in resultados:
 #     print(resultados[0].title)
+
+# elalbum = album_repo.select(4)
+# elalbum.title = "Merrily, merrily, merrily, merrily..."
+# elalbum.genre = "progresive"
+# album_repo.update(elalbum)
+
+# artist_repo.delete(4)
+# album_repo.delete(2)
