@@ -22,9 +22,10 @@ def select(id):
     artist = None
     sql = "SELECT * from artists WHERE id = %s"
     values = [id]
-    results = run_sql(sql, values)[0]
-    if results is not None:
-        artist = Artist(results['name'], results['id'])
+    results = run_sql(sql, values)
+    if results:
+        artist_info = results[0]
+        artist = Artist(artist_info['name'], artist_info['id'])
     return artist
 
 def delete_all():

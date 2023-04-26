@@ -34,3 +34,8 @@ import repositories.artist_repository as artist_repo
 
 # artist_repo.delete(4)
 # album_repo.delete(2)
+
+
+# elartista = artist_repo.select(9)
+# print(elartista)
+
